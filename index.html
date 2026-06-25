@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Prestige Eyelashes &amp; Nails — Norwich</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --char:#1c1a19; --char-2:#2a2725; --champ:#bfa06a; --champ-2:#d4b87f;
+    --ivory:#f4efe7; --ivory-2:#e7ddcd; --ink:#0f0e0d; --muted:#8c8579;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Jost',sans-serif;font-weight:300;color:var(--char);background:var(--ivory);line-height:1.7;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.disp{font-family:'Marcellus',serif;font-weight:400;letter-spacing:.01em}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 28px}
+  .demobar{background:var(--ink);color:#c4b69c;font-size:12.5px;text-align:center;padding:8px 16px;letter-spacing:.02em}
+  .demobar b{color:var(--champ-2)}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0}
+  .logo{font-family:'Marcellus';font-size:22px;letter-spacing:.08em}
+  .logo span{color:var(--champ)}
+  .navlinks a{color:var(--char);text-decoration:none;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;margin-left:28px}
+  .navlinks a:hover{color:var(--champ)}
+  @media(max-width:680px){.navlinks{display:none}}
+  .hero{background:var(--char);color:var(--ivory);padding:90px 0 100px;text-align:center;position:relative}
+  .hero .eyebrow{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--champ-2);margin-bottom:26px}
+  .hero h1{font-size:clamp(42px,7vw,80px);line-height:1.06;font-weight:400;max-width:16ch;margin:0 auto}
+  .hero h1 em{font-style:italic;color:var(--champ-2)}
+  .hero p{font-size:17px;color:#c8bca8;max-width:44ch;margin:26px auto 36px;font-weight:300}
+  .btn{display:inline-block;background:var(--champ);color:var(--ink);text-decoration:none;font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:16px 36px;transition:.2s}
+  .btn:hover{background:var(--champ-2)}
+  .rule{width:50px;height:1px;background:var(--champ);margin:0 auto}
+  section{padding:80px 0}
+  .lab{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--champ);text-align:center;margin-bottom:16px}
+  h2{font-size:clamp(30px,4.6vw,44px);font-weight:400;text-align:center;line-height:1.12}
+  .menu{max-width:640px;margin:46px auto 0}
+  .item{display:flex;justify-content:space-between;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--ivory-2);gap:20px}
+  .item:last-child{border-bottom:none}
+  .item h3{font-size:22px}
+  .item p{font-size:13.5px;color:var(--muted);margin-top:5px;letter-spacing:.01em}
+  .item .pr{font-family:'Marcellus';font-size:19px;color:var(--champ);white-space:nowrap}
+  .about{background:var(--char-2);color:var(--ivory);text-align:center}
+  .about .lab{color:var(--champ-2)}
+  .about p{font-size:18px;color:#cabea9;max-width:50ch;margin:22px auto 0;font-weight:300;line-height:1.8}
+  .quote{text-align:center}
+  .quote blockquote{font-family:'Marcellus';font-style:italic;font-size:clamp(23px,3.8vw,34px);max-width:24ch;margin:0 auto;line-height:1.3}
+  .quote cite{display:block;margin-top:24px;font-style:normal;color:var(--champ);font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+  .cta{background:var(--char);color:var(--ivory);text-align:center}
+  .cta h2{color:var(--ivory)}
+  .cta p{color:#c8bca8;max-width:42ch;margin:18px auto 32px;font-weight:300}
+  footer{background:var(--ink);color:#8c8174;padding:38px 0;font-size:13px;text-align:center;letter-spacing:.03em}
+  #ai-launch{position:fixed;right:22px;bottom:22px;background:var(--char);color:var(--champ-2);border:1px solid var(--champ);border-radius:50px;padding:14px 22px;font-family:'Jost';font-weight:400;font-size:13px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 30px rgba(28,26,25,.4);z-index:50}
+  #ai-launch:hover{background:var(--char-2)}
+  #ai-panel{position:fixed;right:22px;bottom:22px;width:min(370px,calc(100vw - 30px));height:520px;max-height:calc(100vh - 40px);background:var(--ivory);border-radius:10px;box-shadow:0 24px 70px rgba(15,14,13,.4);z-index:51;display:none;flex-direction:column;overflow:hidden}
+  #ai-panel.open{display:flex}
+  .ai-head{background:var(--char);color:var(--ivory);padding:16px 18px;display:flex;justify-content:space-between;align-items:center}
+  .ai-head b{font-family:'Marcellus';font-size:16px;letter-spacing:.04em}
+  .ai-head small{color:#b3a78f;display:block;font-size:11.5px}
+  .ai-head button{background:none;border:none;color:#b3a78f;font-size:22px;cursor:pointer;line-height:1}
+  .ai-body{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:12px}
+  .msg{max-width:84%;padding:11px 14px;border-radius:12px;font-size:14px;line-height:1.45;font-weight:400}
+  .bot{background:#fff;border:1px solid var(--ivory-2);align-self:flex-start;border-bottom-left-radius:3px}
+  .user{background:var(--char);color:var(--ivory);align-self:flex-end;border-bottom-right-radius:3px}
+  .ai-foot{display:flex;gap:8px;padding:12px;border-top:1px solid var(--ivory-2);background:var(--ivory)}
+  .ai-foot input{flex:1;border:1px solid var(--ivory-2);border-radius:8px;padding:11px 12px;font-family:'Jost';font-size:14px;outline:none;background:#fff}
+  .ai-foot input:focus{border-color:var(--champ)}
+  .ai-foot button{background:var(--champ);color:var(--ink);border:none;border-radius:8px;padding:0 16px;font-weight:500;cursor:pointer}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:4px}
+  .chip{background:#fff;border:1px solid var(--ivory-2);font-size:12.5px;padding:7px 11px;border-radius:20px;cursor:pointer;color:var(--char)}
+  .chip:hover{border-color:var(--champ);color:var(--champ)}
+</style>
+</head>
+<body>
+<div class="demobar">✦ <b>DEMO</b> built for Prestige Eyelashes &amp; Nails — treatment prices are placeholders, ready to swap for your real menu</div>
+
+<div class="wrap">
+  <nav>
+    <div class="logo">PRESTIGE <span>·</span> Lashes &amp; Nails</div>
+    <div class="navlinks">
+      <a href="#menu">Treatments</a>
+      <a href="#about">About</a>
+      <a href="#book">Book</a>
+    </div>
+  </nav>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Eyelashes &amp; Nails · Norwich NR1</div>
+    <h1>Lashes that <em>open</em> your whole look.</h1>
+    <p>Expertly applied lash extensions and immaculate nails, in a calm, spotless studio where every set is finished to perfection.</p>
+    <a href="#book" class="btn">Book an appointment</a>
+  </div>
+</header>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="lab">The Menu</div>
+    <h2>Treatments</h2>
+    <div class="rule" style="margin-top:20px"></div>
+    <div class="menu">
+      <div class="item"><div><h3>Classic Lashes</h3><p>Natural, lightweight enhancement — one extension per lash.</p></div><div class="pr">from £45</div></div>
+      <div class="item"><div><h3>Hybrid &amp; Volume</h3><p>Fuller, fluffier sets for a soft-glam or bold finish.</p></div><div class="pr">from £55</div></div>
+      <div class="item"><div><h3>Lash Lift &amp; Tint</h3><p>Your own lashes, lifted and darkened — low maintenance, high impact.</p></div><div class="pr">from £40</div></div>
+      <div class="item"><div><h3>Gel &amp; BIAB Nails</h3><p>Long-lasting, beautifully finished nails, shaped to suit you.</p></div><div class="pr">from £35</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="lab">Welcome</div>
+    <h2>I'm Anna.</h2>
+    <p>I trained to a meticulous standard because I believe the details are everything — clean application, the right style for your eyes, and lashes that last. My studio is spotless and relaxed, and so many of my clients tell me they finally feel confident enough to fall asleep in the chair.</p>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap">
+    <blockquote>"The best at what she does — spotless studio, and my lashes have never looked better."</blockquote>
+    <cite>A loyal client</cite>
+  </div>
+</section>
+
+<section class="cta" id="book">
+  <div class="wrap">
+    <h2>Reserve your appointment.</h2>
+    <p>Book online in moments — or ask the assistant about styles, aftercare and availability anytime.</p>
+    <a href="#" class="btn" onclick="alert('Demo: this would link to Anna\'s real booking page.');return false;">Book online</a>
+  </div>
+</section>
+
+<footer><div class="wrap">Prestige Eyelashes &amp; Nails Studio · Stuart Road, Norwich NR1 · Demo by SparkLab Studio</div></footer>
+
+<button id="ai-launch" onclick="toggleAI()">✦ Ask the assistant</button>
+<div id="ai-panel">
+  <div class="ai-head"><div><b>Prestige Assistant</b><small>Here even after hours</small></div><button onclick="toggleAI()">×</button></div>
+  <div class="ai-body" id="ai-body"></div>
+  <div class="ai-foot"><input id="ai-input" placeholder="Ask about lashes…" onkeydown="if(event.key==='Enter')sendAI()"><button onclick="sendAI()">Send</button></div>
+</div>
+
+<script>
+function toggleAI(){const p=document.getElementById('ai-panel');p.classList.toggle('open');if(p.classList.contains('open')&&!p.dataset.greeted){p.dataset.greeted=1;bot("Hello ✨ I'm Anna's assistant at Prestige. I can help with lash styles, prices, aftercare and booking. What can I help with?");chips(["Lash styles","Prices","How long do they last?","Book in"]);}}
+function bot(t){const b=document.getElementById('ai-body');const d=document.createElement('div');d.className='msg bot';d.innerHTML=t;b.appendChild(d);b.scrollTop=b.scrollHeight;}
+function user(t){const b=document.getElementById('ai-body');const d=document.createElement('div');d.className='msg user';d.textContent=t;b.appendChild(d);b.scrollTop=b.scrollHeight;}
+function chips(arr){const b=document.getElementById('ai-body');const w=document.createElement('div');w.className='chips';arr.forEach(c=>{const s=document.createElement('span');s.className='chip';s.textContent=c;s.onclick=()=>{user(c);setTimeout(()=>answer(c),250);};w.appendChild(s);});b.appendChild(w);b.scrollTop=b.scrollHeight;}
+function sendAI(){const i=document.getElementById('ai-input');const v=i.value.trim();if(!v)return;user(v);i.value='';setTimeout(()=>answer(v),300);}
+function answer(q){q=q.toLowerCase();
+  if(q.match(/price|cost|how much/))return bot("Classic lashes from <b>£45</b>, hybrid/volume from <b>£55</b>, lash lift &amp; tint from <b>£40</b>, nails from <b>£35</b>. Shall I book you in? ✨");
+  if(q.match(/style|classic|volume|hybrid|natural|which/))return bot("Anna offers <b>classic</b> (natural), <b>hybrid</b> and <b>volume</b> (fuller) sets — she'll help you choose what suits your eyes. Want a natural or glam look?");
+  if(q.match(/last|how long|infill|fill/))return bot("Lash sets typically last <b>2–3 weeks</b> before an infill. Anna will talk you through simple aftercare to keep them perfect. 💫");
+  if(q.match(/treat|menu|offer|service|nail/))return bot("Anna does <b>lash extensions</b>, <b>lash lifts</b> and <b>gel/BIAB nails</b>. Which are you interested in?");
+  if(q.match(/book|appoint|availab/))return bot("You can book online anytime, or leave your <b>name</b> and what you'd like and I'll pass it to Anna.");
+  if(q.match(/where|location|park|address/))return bot("Prestige is on <b>Stuart Road, Norwich NR1</b>.");
+  if(q.match(/hi|hello|hey|thanks|thank/))return bot("Lovely to hear from you ✨ Ask me anything about lashes, nails or booking.");
+  bot("Lovely question — I'll make sure Anna sees it. Leave your <b>name</b> and best contact and she'll reply personally.");
+}
+</script>
+</body>
+</html>
